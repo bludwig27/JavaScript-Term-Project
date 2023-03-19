@@ -1,0 +1,123 @@
+body{
+    background-image: url("../media/fin02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:150%;
+    color:azure;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color:gold;
+    font-family:Luminari;
+    text-shadow: burlywood 1px 0 10px;
+    font-style: italic;
+    font-size:200%;
+}
+h2{
+    font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color:darkorange;
+    text-align:center;
+    text-shadow:2px 2px yellow;
+}
+h3{
+    color:darkcyan;
+    font-family:'Times New Roman', Times, serif;
+    text-transform:uppercase;
+    text-shadow:aliceblue 1px 0 10px;
+}
+article{
+    display:flex;
+    width:90%;
+    overflow:auto;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+#info{
+    color:orange;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align:center;
+}
+#info2{
+    color:darkorange;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+#readme{
+    color:gold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    font-style:italic;
+    clear:both;
+}
+#points{
+    color:yellow;
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#speedTest{
+    flex:1;
+    background:url(../media/judgement\ tarot.jpg) no-repeat;
+    background-size: contain;
+	border:10px darkorange ridge;
+    min-width:200px;
+    max-width: 200px;
+    height: 310px;
+	margin:5%;
+	padding:20px;
+}
+#speedTest .h2text{
+    visibility:hidden;
+}
+#speedTest:hover{
+    box-shadow: 0 5px 15px 15px yellow;
+}
+#speedTest:hover .h2text{
+    visibility:visible;
+}
+#knowledgeTest{
+    flex:1;
+	background:url(../media/hierophant\ tarot.jpg) no-repeat;
+    background-size: contain;
+	border:10px darkorange ridge;
+    min-width:200px;
+    max-width:200px;
+    height:310px;
+	margin:5%;
+	padding:20px;
+}
+#knowledgeTest .h2text{
+    visibility:hidden;
+}
+#knowledgeTest:hover{
+    box-shadow: 0 5px 15px 15px yellow;
+}
+#knowledgeTest:hover .h2text{
+    visibility:visible;
+}
+#logicTest{
+    flex:1;
+	background:url(../media/the\ sun\ tarot.jpg) no-repeat;
+    background-size:contain;
+	border:10px darkorange ridge;
+    min-width:200px;
+    max-width:200px;
+	height:310px;
+	margin:5%;
+	padding:20px;
+}
+#logicTest .h2text{
+    visibility:hidden;
+}
+#logicTest:hover{
+    box-shadow: 0 5px 15px 15px yellow;
+}
+#logicTest:hover .h2text{
+    visibility:visible;
+}
