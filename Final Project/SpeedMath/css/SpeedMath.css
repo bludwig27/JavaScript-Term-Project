@@ -1,0 +1,86 @@
+body{
+    background-image: url("../media/fin02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:150%;
+    color:azure;
+    display:grid;
+    place-items: center;
+}
+
+a{
+    position:fixed;
+    bottom:5px;
+    right:auto;
+    text-decoration:underline;
+    font-style: italic;
+    color:orange;
+}
+
+h1{
+    color:orange;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:2em;
+    font-weight:600;
+}
+
+#details{
+    background-color:silver;
+    color:darkblue;
+    font-size:16px;
+    text-align:center;
+    padding:10px;
+    margin:10px;
+    margin-top: 50px;
+    font-weight:800;
+}
+
+#details:hover{
+    background-color:darkgrey;
+    color:blue;
+}
+
+#start{
+    background-color:gold;
+    color:orangered;
+    font-size:24px;
+    text-align:center;
+    padding:15px;
+    margin:15px;
+    margin-top: 150px;
+    font-weight:600;
+}
+
+#start:hover{
+    background-color:black;
+    color:gold;
+}
+
+#score{
+    position:fixed;
+    left:auto;
+    bottom: 50px;
+    font-size:70px;
+    color:darkgray;
+}
+
+#question{
+    position:fixed;
+    left:auto;
+    top: 37%;
+    font-size: 80px;
+    font-weight:800;
+    color: orange;
+}
+
+#timer{
+    position:fixed;
+    left:auto;
+    top:20%;
+    font-size: 76px;
+    color:gold;
+}
+
+input[type='text'] {font-size:32px; position:fixed;left:47%;bottom:26%;width:115px;}
+input[type='submit'] {font-size:32px; position: fixed; left: 47%; bottom: 20%;background-color: black;color:gold;border:5px solid gold;}

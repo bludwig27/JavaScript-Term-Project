@@ -1,0 +1,97 @@
+body{
+    background-image: url("../media/fin02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:150%;
+    color:azure;
+    display:grid;
+    place-items: center;
+}
+
+#details{
+    background-color:silver;
+    color:darkblue;
+    font-size:16px;
+    text-align:center;
+    padding:10px;
+    margin:10px;
+    margin-top: 50px;
+    font-weight:800;
+}
+
+#details:hover{
+    background-color:darkgrey;
+    color:blue;
+}
+
+#start{
+    background-color:gold;
+    color:orangered;
+    font-size:24px;
+    text-align:center;
+    padding:15px;
+    margin:15px;
+    margin-top: 150px;
+    font-weight:600;
+}
+
+#start:hover{
+    background-color:black;
+    color:gold;
+}
+
+#question{
+    /* border:5px solid gold; */
+    position:fixed;
+    left:auto;
+    top: 30%;
+    width:60%;
+    font-size: 32px;
+    font-weight:500;
+    color: lightskyblue;
+}
+
+#option1{
+    /* border:3px solid gold; */
+    width:35%;
+    position:fixed;
+    left:auto;
+    top: 50%;
+    font-size: 24px;
+    font-weight:400;
+    color: lightskyblue;
+}
+
+#option2{
+    /* border:3px solid gold; */
+    width:35%;
+    position:fixed;
+    left:auto;
+    top: 55%;
+    font-size: 24px;
+    font-weight:400;
+    color: lightskyblue;
+}
+
+#option3{
+    /* border:3px solid gold; */
+    width:35%;
+    position:fixed;
+    left:auto;
+    top: 60%;
+    font-size: 24px;
+    font-weight:400;
+    color: lightskyblue;
+}
+
+#option4{
+    /* border:3px solid gold; */
+    width:35%;
+    position:fixed;
+    left:auto;
+    top: 65%;
+    font-size: 24px;
+    font-weight:400;
+    color: lightskyblue;
+}
