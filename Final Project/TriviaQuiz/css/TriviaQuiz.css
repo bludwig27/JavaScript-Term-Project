@@ -9,6 +9,11 @@ body{
     place-items: center;
 }
 
+h3{
+    color:gold;
+    text-align: center;
+}
+
 #details{
     background-color:silver;
     color:darkblue;
@@ -18,6 +23,14 @@ body{
     margin:10px;
     margin-top: 50px;
     font-weight:800;
+}
+
+#score{
+    position:fixed;
+    left:auto;
+    bottom: 50px;
+    font-size:70px;
+    color:darkgray;
 }
 
 #details:hover{
@@ -40,7 +53,14 @@ body{
     background-color:black;
     color:gold;
 }
-
+a{
+    position:fixed;
+    bottom:5px;
+    right:auto;
+    text-decoration:underline;
+    font-style: italic;
+    color:orange;
+}
 #question{
     /* border:5px solid gold; */
     position:fixed;
@@ -53,10 +73,10 @@ body{
 }
 
 #option1{
-    /* border:3px solid gold; */
+    border:3px solid gold;
     width:35%;
     position:fixed;
-    left:auto;
+    left:30%;
     top: 50%;
     font-size: 24px;
     font-weight:400;
@@ -64,10 +84,10 @@ body{
 }
 
 #option2{
-    /* border:3px solid gold; */
+    border:3px solid gold;
     width:35%;
     position:fixed;
-    left:auto;
+    left:30%;
     top: 55%;
     font-size: 24px;
     font-weight:400;
@@ -75,10 +95,10 @@ body{
 }
 
 #option3{
-    /* border:3px solid gold; */
+    border:3px solid gold;
     width:35%;
     position:fixed;
-    left:auto;
+    left:30%;
     top: 60%;
     font-size: 24px;
     font-weight:400;
@@ -86,10 +106,10 @@ body{
 }
 
 #option4{
-    /* border:3px solid gold; */
+    border:3px solid gold;
     width:35%;
     position:fixed;
-    left:auto;
+    left:30%;
     top: 65%;
     font-size: 24px;
     font-weight:400;

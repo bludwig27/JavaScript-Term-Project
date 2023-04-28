@@ -8,16 +8,19 @@
         <meta charset="utf-8">
         <title>Darktooth's Challenge</title>
         <link href="css/FinalProject.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <!--This is the header with the logo and Darktooth's intro.-->
     <header>
-        <h1>Darktooth's Challenge</h1>
+        <h1 style="margin-left:2%">Darktooth's Challenge</h1>
         <h3 style="margin-left:5%">So. You have discovered my lair.</h3>
-        <h3 style="margin-left:10%">Complete my challenge to prove yourself worthy of my treasure.</h3>
+        <h3 style="margin-left:10%">Complete my challenges to prove yourself worthy.</h3>
+        <button id="clearData">Clear Data</button>
     </header>
     <body>
         <!--This displays the user's current point total.-->
-        <p id="points">You currently have 0 treasure points.</p>
+        <div id="points"></div>
+        <div id="rank"></div>
         <a href="FinalProjectInfo.html" id="readme">First-time visitors click here!</a>
         <article>
             <!--Link to the Challenge of Speed-->
@@ -30,9 +33,10 @@
               </section>
             <!--Link to the Challenge of Logic-->
               <section id="logicTest">
-                <a href="FinalProjectLogic.html"><h2 class="h2text">Test of Logic</h2></a>
+                <a href="LogicTest/LogicTest.html"><h2 class="h2text">Test of Logic</h2></a>
               </section>
             </a>
         </article>
+        <script src="js/FinalProject.js"></script>
     </body>
 </html>

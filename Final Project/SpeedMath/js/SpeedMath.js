@@ -1,4 +1,15 @@
+//Create scoring system
+
 var myScore = 0;
+if(!localStorage.speedHigh){
+var speedHigh = 0;
+localStorage.speedHigh = 0;}
+else{
+    speedHigh = localStorage.speedHigh;
+};
+$('#game1High').html("<h3>High Score: " + speedHigh +"</h3>");
+console.log(speedHigh);
+console.log(localStorage.speedHigh);
 
 //Hides the game elements on page load
 
@@ -11,7 +22,7 @@ $('document').ready(function(){
 //Displays readme
 
 $('#details').on('click', function(){
-    alert("Welcome to the Challenge of Speed!\nIn this challenge, you must answer simple arithmetical questions as quickly as possible.\nBe quick, but be accurate: a correct answer will bring you 1 point and 2 bonus seconds, but a wrong one will cost you 1 point!\n\nTIP: Don't forget order of operations. Multiplication comes first!\nTry for Gold rank!");
+    alert("Welcome to the Challenge of Speed!\nIn this challenge, you must answer simple arithmetical questions as quickly as possible.\nBe quick, but be accurate: a correct answer will bring you 5 points and 2 bonus seconds, but a wrong one will cost you 3 points!\n\nTIP: Don't forget order of operations. Multiplication comes first!\nTry for Gold rank!");
 });
 
 //Main game code; reveals game interface when "Begin" is clicked
@@ -34,26 +45,26 @@ $('#start').click(function(){
         myAns = $("#myAns").val();
         console.log(myAns);
         if (myAns == ans){
-            myScore += 1;
+            myScore += 5;
             $('#score').text(myScore);
             timeLeft = ($('#timer').html()*1) + 2;
         }
         else{
-            myScore -= 1;
+            myScore -= 3;
             $('#score').text(myScore);
         }
         $('#myAns').val("");
         $('#myAns').focus();
-        if(myScore>=5 && myScore < 10){
+        if(myScore>=25 && myScore < 50){
             $('#score').css("color","brown");
         }
-        if(myScore>=10 && myScore < 15){
+        if(myScore>=50 && myScore < 75){
             $('#score').css("color","white");
         }
-        if(myScore<5){
+        if(myScore<25){
             $('#score').css("color","darkgray");
         }
-        if(myScore>=15){
+        if(myScore>=75){
             $('#score').css("color","gold");
         }
         ans=getQuestion();
@@ -78,16 +89,22 @@ function startTimer(){
     },1000);
 };
 
-//Displays score and ranking when timer runs out
+//Displays score and ranking when timer runs out; updates high score in storage if applicable
 
 function gameOver(){
     myScore = $('#score').html();
     var myRank = "";
-    if (myScore<5) {myRank = "Tin.\nDarktooth is not impressed.";}
-    if (myScore>=5 && myScore<10) {myRank = "Bronze.\nDarktooth feels you have a ways to go.";}
-    if (myScore>=10 && myScore<15) {myRank = "Silver.\nDarktooth is impressed by your skills.";}
-    if (myScore>=15) {myRank = "GOLD!\nDarktooth is amazed by your mental speed!";}
-    alert("Time is up!\nYour final score was " + myScore + ".\nYour ranking is "+ myRank);
+    if (myScore<25) {myRank = "Tin.\nDarktooth is not impressed.";}
+    if (myScore>=25 && myScore<50) {myRank = "Bronze.\nDarktooth feels you have a ways to go.";}
+    if (myScore>=50 && myScore<75) {myRank = "Silver.\nDarktooth is impressed by your skills.";}
+    if (myScore>=75) {myRank = "GOLD!\nDarktooth is amazed by your mental speed!";}
+    if (myScore > Number(speedHigh)){
+        speedHigh = myScore;
+        localStorage.speedHigh = speedHigh;
+        alert("Time is up!\nYour final score was " + myScore + ".\nYour ranking is "+ myRank + "\n\n**A new high score!**");
+    }
+    else{
+    alert("Time is up!\nYour final score was " + myScore + ".\nYour ranking is "+ myRank);}
     location.reload(true);
 };
 

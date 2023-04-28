@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Luminari;
+    src: url(Luminari-Regular.ttf);
+}
+
 body{
     background-image: url("../media/fin02.jpg");
     background-repeat: no-repeat;
@@ -60,6 +65,10 @@ article{
     color:yellow;
     text-align:center;
     font-family: 'Courier New', Courier, monospace;
+}
+#rank{
+    text-align:center;
+    font-family:'Courier New', Courier, monospace;
 }
 #speedTest{
     flex:1;

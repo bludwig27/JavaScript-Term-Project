@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Luminari;
+    src: url(Luminari-Regular.ttf);
+}
+
 body{
     background-image: url("../media/fin02.jpg");
     background-repeat: no-repeat;
@@ -20,9 +25,14 @@ a{
 
 h1{
     color:orange;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Luminari;
     font-size:2em;
     font-weight:600;
+}
+
+h3{
+    color:gold;
+    text-align: center;
 }
 
 #details{
